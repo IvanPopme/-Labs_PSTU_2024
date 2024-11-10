@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main()
+float main()
 {
 	setlocale(LC_ALL, "RU");
 	float a, b;
@@ -10,7 +10,7 @@ int main()
 
 	if (b == 0)
 	{
-		std::cout << "Íà íîëü äåëèòü íåëüçÿ" << endl;
+		std::cout << "ÃÃ  Ã­Ã®Ã«Ã¼ Ã¤Ã¥Ã«Ã¨Ã²Ã¼ Ã­Ã¥Ã«Ã¼Ã§Ã¿" << endl;
 	}
 	else;
 	{
