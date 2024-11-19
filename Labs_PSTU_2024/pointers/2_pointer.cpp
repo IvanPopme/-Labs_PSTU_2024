@@ -9,4 +9,5 @@ int main()
     ptr1 = &a;
     ptr2 = &b;
     cout << *ptr1 + *ptr2 << endl;
+    return 0;
 }
