@@ -3,8 +3,8 @@ using namespace std;
 int main()
 {
 	int a, b, tmp;
-	int* ptr1;
-	int* ptr2;
+	int *ptr1;
+	int *ptr2;
 	cin >> a >> b;
 	cout << a << b << endl;
 	ptr1 = &a;
