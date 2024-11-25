@@ -5,7 +5,7 @@ int main()
 {
     int N;
     cin >> N;
-    if (N < 3 && (N % 2) == 0)
+    if (N <= 3 && (N % 2) == 0)
     {
         cout << " You need an odd number > 3 \n";
     }
