@@ -4,7 +4,7 @@ int main()
 {
 	int n;
 	cin >> n;
-	if (n < 2)
+	if (n <= 2)
 	{
 		cout << "number > 2\n";
 	}
