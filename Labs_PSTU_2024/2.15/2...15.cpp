@@ -12,7 +12,7 @@ int main()
 		if (k == s)
 		{
 			flag = true;
-			cout << "Öèôğà íàéäåíà!" << endl;
+			cout << "Ğ¦Ğ¸Ñ„Ñ€Ğ° Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ğ°!" << endl;
 		}
 		else
 		{
@@ -21,7 +21,7 @@ int main()
 	}
 	if (!flag)
 	{
-		cout << "Öèôğà íå íàéäåíà!" << endl;
+		cout << "Ğ¦Ğ¸Ñ„Ñ€Ğ° Ğ½Ğµ Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ğ°!" << endl;
 	}
 	return 0;
 }
