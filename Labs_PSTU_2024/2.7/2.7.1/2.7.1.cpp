@@ -9,7 +9,9 @@ int main()
 	{
 		cout << "number > 3\n";
 	}
-	k = sqrt(n); // берем квадратный корень числа k
+	else
+	{
+	k = sqrt(n); // ГЎГҐГ°ГҐГ¬ ГЄГўГ Г¤Г°Г ГІГ­Г»Г© ГЄГ®Г°ГҐГ­Гј Г·ГЁГ±Г«Г  k
 	for (int i = 0; i < k; i++)
 	{
 		for (int j = 0; j < k; j++)
@@ -17,6 +19,7 @@ int main()
 			cout << "* ";
 		}
 		cout << endl;
+	}
 	}
 	return 0;
 }
