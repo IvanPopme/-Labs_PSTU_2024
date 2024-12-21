@@ -8,6 +8,8 @@ int main()
 	{
 		cout << "number > 2\n";
 	}
+	else
+	{
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 1; j <= i; j++)
@@ -21,4 +23,5 @@ int main()
 		cout << endl;
 	}
 	return 0;
+	}
 }
