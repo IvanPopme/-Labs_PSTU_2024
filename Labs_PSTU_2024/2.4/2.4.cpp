@@ -9,10 +9,12 @@ int main()
     {
         cout << " You need an odd number > 3 \n";
     }
+    else
+    {
     int spaces = N / 2;
     int stars = 1;
     for (int i = 0; i < (N + 1) / 2; i++)
-    {
+      {
         for (int j = 0; j <= spaces; j++)
         {
             cout << " ";
@@ -24,6 +26,7 @@ int main()
         }
         stars += 2;
         cout << endl;
+      }
     }
     return 0;
 }
