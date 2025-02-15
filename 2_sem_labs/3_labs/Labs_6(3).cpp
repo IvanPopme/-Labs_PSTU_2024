@@ -6,13 +6,13 @@ int main()
 {
     setlocale(LC_ALL, "RU");
     string input;
-    cout << "Ââåäèòå ñòðîêó: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ: ";
     getline(cin, input);
 
     string alphabet;
     string number;
 
-    // Ðàçäåëÿåì ñèìâîëû íà áóêâû è öèôðû
+    // Ð Ð°Ð·Ð´ÐµÐ»ÑÐµÐ¼ ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹ Ð½Ð° Ð±ÑƒÐºÐ²Ñ‹ Ð¸ Ñ†Ð¸Ñ„Ñ€Ñ‹
     for (char chik : input)
     {
         if (isalpha(chik))
@@ -25,10 +25,10 @@ int main()
         }
     }
 
-    // Ñîåäèíÿåì áóêâû è öèôðû
+    // Ð¡Ð¾ÐµÐ´Ð¸Ð½ÑÐµÐ¼ Ð±ÑƒÐºÐ²Ñ‹ Ð¸ Ñ†Ð¸Ñ„Ñ€Ñ‹
     string result = alphabet + number;
 
-    cout << "Ðåçóëüòàò: " << result << endl;
+    cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << result << endl;
 
     return 0;
 }
