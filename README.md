@@ -20,8 +20,8 @@ Votykov Ivan IVT24-1B
 | idef0 | ✅ | ✅ | IDF0 |
 | №9 | ✅ | ✅ | Labs_6 | 
 | Сложные сортировки: | ❌ | ❌ | Labs_8 | 
-| Bucket Sort | ✅ | ❌ | Labs_8 |
-| Counting Sort | ✅ | ❌ | Labs_8 |
+| Bucket Sort | ✅ | 🕐 | Labs_8 |
+| Counting Sort | ✅ | 🕐 | Labs_8 |
 | Сложные сортировки:| ❌ | ❌ |  |
 | Сложные сортировки:| ❌ | ❌ |  |
 | Сортировка Шелла и Хоара | ❌ | ❌ |  | 
