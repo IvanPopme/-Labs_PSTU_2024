@@ -5,6 +5,7 @@ struct Node
 {
     int value;
     Node* next = nullptr;
+    Node* prev = nullptr;  // Добавлен указатель на предыдущий элемент
 };
 
 struct Queue 
@@ -16,8 +17,15 @@ struct Queue
     void push(int x)
     {
         Node* newNode = new Node{ x };
-        if (last) last->next = newNode;
-        else first = newNode;
+        if (last) 
+        {
+            last->next = newNode;
+            newNode->prev = last;  // Устанавливаем связь с предыдущим элементом
+        }
+        else 
+        {
+            first = newNode;
+        }
         last = newNode;
     }
 
@@ -27,18 +35,37 @@ struct Queue
         if (!first) return;
         Node* temp = first;
         first = first->next;
-        if (!first) last = nullptr;
+        if (first) 
+        {
+            first->prev = nullptr;  // Обнуляем указатель на предыдущий элемент
+        }
+        else 
+        {
+            last = nullptr;
+        }
         delete temp;
     }
 
-    // Вывести очередь
-    void print()
+    // Вывести очередь (с начала в конец)
+    void print_forward()
     {
         Node* current = first;
         while (current)
         {
             cout << current->value << " ";
             current = current->next;
+        }
+        cout << endl;
+    }
+
+    // Вывести очередь (с конца в начало)
+    void print_backward()
+    {
+        Node* current = last;
+        while (current)
+        {
+            cout << current->value << " ";
+            current = current->prev;
         }
         cout << endl;
     }
@@ -58,16 +85,22 @@ int main()
     q.push(2);
     q.push(3);
 
-    cout << "Очередь: ";
-    q.print();
+    cout << "Очередь (с начала в конец): ";
+    q.print_forward();
+
+    cout << "Очередь (с конца в начало): ";
+    q.print_backward();
 
     q.pop();
-    cout << "После удаления: ";
-    q.print();
+    cout << "После удаления (с начала в конец): ";
+    q.print_forward();
 
     q.push(4);
-    cout << "После добавления: ";
-    q.print();
+    cout << "После добавления (с начала в конец): ";
+    q.print_forward();
+
+    cout << "После добавления (с конца в начало): ";
+    q.print_backward();
 
     return 0;
 }
