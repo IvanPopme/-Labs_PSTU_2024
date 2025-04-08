@@ -69,16 +69,25 @@ void merge(int arr[], int left, int mid, int right)
 
 int main()
 {
-    setlocale (LC_ALL, "RU");
+    setlocale(LC_ALL, "RU");
     int arr[] = { 12, 11, 13, 5, 6, 7 };
-    
     int n = sizeof(arr) / sizeof(arr[0]);
+
+    cout << "Исходный массив: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i];
+        if (i < n - 1) cout << ", ";
+    }
+    cout << endl;
 
     mergeSort(arr, 0, n - 1);
 
+    cout << "Отсортированный массив: ";
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << " ";
+        cout << arr[i];
+        if (i < n - 1) cout << ", ";
     }
     cout << endl;
 
