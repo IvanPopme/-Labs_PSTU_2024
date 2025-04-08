@@ -44,7 +44,7 @@ void printArray(int arr[], int size)
     cout << endl;
 }
 
-// Пример использования
+// Массив
 int main() 
 {
     setlocale (LC_ALL, "RU");
