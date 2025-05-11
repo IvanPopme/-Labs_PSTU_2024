@@ -38,6 +38,7 @@ Votykov Ivan IVT24-1B
 | Class_2 | ✅ | ❌ | Class_2 |
 | Class_3 | ✅ | ❌ | Class_3 |
 | Class_4 | ✅ | ❌ | Class_4 |
+| Class_5 | ✅ | ❌ | Class_5 |
 | Деревья | ❌ | ❌ |  |
 | Графы | ❌ | ❌ |  |
 | **Сумма** |  |  |  |
