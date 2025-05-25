@@ -52,9 +52,9 @@ public:
 };
 
 int main() {
-    // Установка русской локали
-    setlocale(LC_ALL, "ru_RU.UTF-8");
-    locale::global(locale("ru_RU.UTF-8"));
+    
+    setlocale(LC_ALL, "RU");
+   
 
     try {
         MySet<double> s;
