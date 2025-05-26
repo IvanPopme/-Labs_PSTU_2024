@@ -2,8 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-TSPSolver::TSPSolver(const vector<vector<int>>& costMatrix)
-    : cost(costMatrix), n(costMatrix.size()), bestCost(numeric_limits<int>::max()) {}
+TSPSolver::TSPSolver(const vector<vector<int>>& costMatrix)  : cost(costMatrix), n(costMatrix.size()), bestCost(numeric_limits<int>::max()) {}
 
 int TSPSolver::solve(vector<int>& bestPath) {
     vector<int> path;
