@@ -1,37 +1,42 @@
 #include "Student.h"
-#include "Event.h"
+#include <iostream>
 
-Student::Student() : Person() {
-    rating = 0.0;
+Student::Student(void) : Person() {
+    rating = 0;
 }
+
+Student::~Student(void) {}
 
 Student::Student(string n, int a, float r) : Person(n, a) {
     rating = r;
 }
 
-Student::Student(const Student& s) {
-    name = s.name;
-    age = s.age;
+Student::Student(const Student& s) : Person(s) {
     rating = s.rating;
-}
-
-void Student::Input() {
-    Person::Input();
-    cout << "Введите рейтинг: ";
-    cin >> rating;
 }
 
 void Student::Show() {
     Person::Show();
-    cout << "Рейтинг: " << rating << endl;
+    cout << "RATING: " << rating << "\n";
+}
+
+void Student::Input() {
+    Person::Input();
+    cout << "Rating: "; cin >> rating;
+}
+
+void Student::Set_rating(float r) {
+    rating = r;
+}
+
+Student& Student::operator=(const Student& s) {
+    if (&s == this) return *this;
+    name = s.name;
+    age = s.age;
+    rating = s.rating;
+    return *this;
 }
 
 void Student::HandleEvent(const TEvent& e) {
-    if (e.what == evMessage) {
-        switch (e.command) {
-            case cmGet:
-                cout << "Имя студента: " << GetName() << endl;
-                break;
-        }
-    }
+    Person::HandleEvent(e);
 }
