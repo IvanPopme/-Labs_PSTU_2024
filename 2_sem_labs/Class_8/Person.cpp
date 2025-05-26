@@ -1,9 +1,12 @@
 #include "Person.h"
+#include <iostream>
 
-Person::Person() {
+Person::Person(void) {
     name = "";
     age = 0;
 }
+
+Person::~Person(void) {}
 
 Person::Person(string n, int a) {
     name = n;
@@ -15,21 +18,38 @@ Person::Person(const Person& p) {
     age = p.age;
 }
 
-void Person::Input() {
-    cout << "Введите имя: ";
-    cin >> name;
-    cout << "Введите возраст: ";
-    cin >> age;
-}
-
 void Person::Show() {
-    cout << "Имя: " << name << ", Возраст: " << age << endl;
+    cout << "\nNAME: " << name;
+    cout << "\nAGE: " << age;
+    cout << "\n";
 }
 
-void Person::SetName(string n) { name = n; }
-void Person::SetAge(int a) { age = a; }
-string Person::GetName() { return name; }
-int Person::GetAge() 
-{
-  return age;
+void Person::Input() {
+    cout << "\nName: "; cin >> name;
+    cout << "Age: "; cin >> age;
+}
+
+void Person::Set_name(string n) {
+    name = n;
+}
+
+void Person::Set_age(int a) {
+    age = a;
+}
+
+Person& Person::operator=(const Person& p) {
+    if (&p == this) return *this;
+    name = p.name;
+    age = p.age;
+    return *this;
+}
+
+void Person::HandleEvent(const TEvent& e) {
+    if (e.what == evMessage) {
+        switch (e.command) {
+            case cmShowOne:
+                cout << "Name: " << Get_name() << endl;
+                break;
+        }
+    }
 }
