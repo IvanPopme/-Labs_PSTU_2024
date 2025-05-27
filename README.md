@@ -46,7 +46,7 @@ Votykov Ivan IVT24-1B
 | Class_10 | ✅ | ✅ | Class_10 |
 | Class_11 | ✅ | ✅ | Class_11 |
 | Class_12 | ✅ | ✅ | Class_12 |
-| Class_13 | ✅ | ✅ | Class_5 |
+| Class_13 | ✅ | ✅ | Class_13 |
 | Деревья | ✅ | ✅ | Binary trees |
 | Графы | ✅ | ✅ | graphs |
 | коммивояжер| ✅ | ✅ | Traveling salesman |
